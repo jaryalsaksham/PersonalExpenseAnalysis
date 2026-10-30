@@ -1,0 +1,51 @@
+PERSONAL EXPENSE ANALYSIS
+-----------------------------------
+
+First five records:
+        date   category  amount payment_method    month
+0 2026-01-02       Food     250            UPI  2026-01
+1 2026-01-04  Transport     120           Cash  2026-01
+2 2026-01-06   Shopping     850           Card  2026-01
+3 2026-01-09      Bills     600            UPI  2026-01
+4 2026-01-12       Food     320            UPI  2026-01
+
+Total expenses: Rs. 11750.00
+Average transaction amount: Rs. 419.64
+Average spending per day with a recorded expense: Rs. 419.64
+Highest spending category: Shopping (Rs. 3300.00)
+
+Expenses by category:
+category
+Shopping         3300
+Bills            3250
+Food             2700
+Entertainment    1550
+Transport         950
+
+Expenses by month:
+month
+2026-01    4300
+2026-02    3620
+2026-03    3830
+
+Expenses by payment method:
+payment_method
+UPI     6280
+Card    3950
+Cash    1520
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+/mnt/data/personal_expense_analysis/main.py:45: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/mnt/data/personal_expense_analysis/main.py:56: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/mnt/data/personal_expense_analysis/main.py:67: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
